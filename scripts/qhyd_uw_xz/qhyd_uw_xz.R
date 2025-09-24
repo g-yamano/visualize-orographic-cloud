@@ -44,7 +44,7 @@ z_km <- z * 10^(-3)
 # make plot function
 plot_QHYD_slice <- function(time_val, QHYD_slice, U_slice, W_slice, x_start_mat, z_start_mat, x_indices, z_indices) {
   
-  base_filename <- paste("QHYD_UW_XZ.", sprintf("%05d", as.numeric(time_val)), ".pdf", sep = "")
+  base_filename <- paste("qhyd_uw_xz", sprintf("%05d", as.numeric(time_val)), ".pdf", sep = "")
   pdf_filename <- file.path(output_dir, base_filename)
   
   pdf(pdf_filename, width = pdf_width, height = pdf_height)
