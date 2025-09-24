@@ -44,7 +44,7 @@ if (!dir.exists(output_dir)) {
   dir.create(output_dir, recursive = TRUE)
 }
 
-input_file <- file.path(data_dir, "merged-h_history.pe000000.nc")
+input_file <- file.path(data_dir, "merged-h_history_d01.pe000000.nc")
 
 input_files <- c(
   "tomita08" = "../../data/tomita08/merged-h_history.pe000000.nc",
