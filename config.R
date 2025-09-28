@@ -4,10 +4,10 @@
 # Date: 2025/08/26
 ###################################################
 
-# visualize sounding data individually 
+# visualize sounding data individually
 
 # Define the absolute path to the project's root directory here.
-project_root <- "/Users/gaku/Desktop/04.research/40.visualize/visualize_squallline/"
+project_root <- "hogehoge"  # <-- Change this to your project's root path
 # ----------------
 
 get_this_script_path <- function() {
@@ -23,8 +23,7 @@ get_this_script_path <- function() {
 }
 
 # --- Settings ---
-visualize_target <- "sdm"
-# ----------------
+visualize_target <- "tomita08"
 
 # --- Path Settings ---
 base_name <- basename(getwd())
@@ -34,9 +33,8 @@ this_script_path <- get_this_script_path()
 if (!is.null(this_script_path)) {
   output_filename <- sub(".R$", ".pdf", basename(this_script_path))
 } else {
-  output_filename <- paste0(base_name, ".pdf") # 取得失敗時のデフォルト
+  output_filename <- paste0(base_name, ".pdf")
 }
-#output_filename <- paste0(base_name, ".pdf") 
 
 data_dir   <- file.path(project_root, "data", visualize_target)
 
@@ -48,14 +46,9 @@ input_file <- file.path(data_dir, "merged-h_history_d01.pe000000.nc")
 
 input_files <- c(
   "tomita08" = "../../data/tomita08/merged-h_history.pe000000.nc",
-  "suzuki10_0-3h" = "../../data/suzuki10_0-3h/merged-h_history.pe000000.nc",
-  "suzuki10_3-6h" = "../../data/suzuki10_3-6h/restart_history_corrected.nc",
-  "sdm" = "../../data/sdm/merged-h_history.pe000000.nc"
+  "suzuki10" = "../../data/suzuki10/restart_history_corrected.nc",
+  "sn14" = "../../data/sn14/merged-h_history.pe000000.nc"
 )
-#input_files <- c(
-#  "tomita08" = file.path(project_root, "data/tomita08/merged-h_history.pe000000.nc"),
-#  "sdm" = file.path(project_root, "data/sdm/merged-h_history.pe000000.nc")
-#)
 
 plot_colors <- c("#0072B2", "#EECC66", "#EECC66", "#009E73")
 
