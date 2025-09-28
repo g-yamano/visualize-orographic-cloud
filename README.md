@@ -4,7 +4,7 @@
 ## 概要 / Overview
 
 このプロジェクトは、数値シミュレーション（SCALE-RMなど）によって出力されたスコールラインのNetCDF形式データを可視化するためのRスクリプト集です。
-主な目的は、複数の異なる実験設定（例: Tomita08）の結果を、同じグラフ上に重ねて描画し、比較・分析することです。
+主な目的は、複数の異なる実験設定（例: Tomita08, Suzuki10, SN14）の結果を、同じグラフ上に重ねて描画し、比較・分析することです。
 
 This project is a collection of R scripts designed to visualize NetCDF output data from numerical simulations of squall lines (e.g., using the SCALE-RM model). The primary goal is to create comparative plots from multiple experimental runs, overlaying them on a single graph for analysis.
 
