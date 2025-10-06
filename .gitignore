@@ -13,3 +13,6 @@ output/*
 .Rhistory
 .RDataTmp*
 .Rproj.user/
+
+#util
+util/util_sno/*.sh
